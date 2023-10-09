@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define FILE_WEITH "weith.txt"
+#include <config.nn.c>
 
 double *getWeith (int *structure, size_t length);
 
@@ -19,11 +19,11 @@ double *getWeith (int *structure, size_t length)
     double *result[length - 1];
 
     FILE *file;
-    file = fopen(FILE_WEITH, "r");
+    file = fopen(NAME_FILE_WEITH, "r");
 
     if (file == NULL && 0) {
 	printf("Create file for weith... \n");
-	file = fopen(FILE_WEITH, "w");
+	file = fopen(NAME_FILE_WEITH, "w");
     } else {
 
     }

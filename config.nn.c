@@ -1,0 +1,1 @@
+#define NAME_FILE_WEITH "weith.txt"
